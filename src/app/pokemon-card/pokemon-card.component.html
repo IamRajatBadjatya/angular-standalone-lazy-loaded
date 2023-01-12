@@ -1,0 +1,16 @@
+<div class="card mb-3" @fadeAnimation>
+  <img [src]="pokemon.image" class="card-img-top" [alt]="pokemon.name" />
+  <!-- <app-pokemon-image-carousel
+    class="card-img-top"
+    [images]="pokemon | images"
+  ></app-pokemon-image-carousel> -->
+  <div class="card-body">
+    <h5 class="card-title">
+      <span class="badge" [style.background]="pokemon.types[0] | badgeBg"
+        >#{{ pokemon.number }}</span
+      >
+      - {{ pokemon.name }}
+    </h5>
+    <p class="card-text">{{ pokemon.description }}</p>
+  </div>
+</div>

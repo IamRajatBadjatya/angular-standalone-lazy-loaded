@@ -1,0 +1,9 @@
+/* Add application styles & imports to this file! */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+h1,
+h2,
+p,
+label {
+  font-family: Lato;
+}

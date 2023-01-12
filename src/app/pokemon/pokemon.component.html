@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="pokemon-container">
+    <h1 class="mb-5 mt-4 text-center">Cute Pokemons</h1>
+    <app-pokemon-grid-with-controls
+      *ngIf="pokemons$ | async as pokemons; else loadingIndicator"
+      [pokemons]="pokemons"
+    >
+    </app-pokemon-grid-with-controls>
+    <ng-template #loadingIndicator>
+      <p>Loading...</p>
+    </ng-template>
+  </div>
+</div>
